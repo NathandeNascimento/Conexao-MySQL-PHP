@@ -1,0 +1,23 @@
+body{margin: 0px;
+    padding: 0px;
+    background-image: url(img/universo2.jpg);
+    }
+li{
+    list-style: none;
+}
+
+.corpo{
+    margin: 10% 15%;
+ padding: 10px;
+ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ text-align:center;
+ background-color: rgba(255, 255, 255, .2);
+ box-shadow: 5px 10px 15px rgba(105, 81, 170, .3);
+ color: rgb(254, 254, 255);
+ font-size:x-large;
+ border-radius: 5px;
+
+ }
+ul{font-size: 25px;
+    color: gainsboro;
+}
