@@ -1,3 +1,6 @@
+<? include_once "top.php";?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +13,7 @@
 </head>
 
 <body>
-<div class="corpo ">
+<div class="corpo">
 
  <b>Cadastro no MySQL</b> 
 
