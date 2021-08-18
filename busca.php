@@ -20,7 +20,7 @@
         {
             echo'<table>
             <br/>
-                <td width="9%" align="left"> ' .$rows_nomes["id"] .' </a > </td>
+                <td width="9%" align="left"><a href="editar.php?id='.$rows_nomes ["id"] .' "title=Editar"> '  .$rows_nomes["id"] .' </a > </td>
                 <td width="15%" align="left"> ' .$rows_nomes["Nome"] .' </a > </td> 
                 <td width="5%" align="left"> ' .$rows_nomes["idade"] .'  </td> 
             </table>';} 
