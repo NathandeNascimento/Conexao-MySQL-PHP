@@ -19,7 +19,8 @@
 
  
 <form action="querecebe.php" method="post">
-    <ul>
+    <ul> 
+        
         <li><label>Nome:</label></li>
         <input type="text" name="nome">
         <li><label>Idade:</label></li>
