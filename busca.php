@@ -1,14 +1,24 @@
 <? include_once "config.php";?>
 <? include_once "top.php";?>
 
+<script>
+    function deletar_id() {
+        if (confirm("Você deseja deletar este registro?; Vou apagar e não tem como recuperar depois!!!"))
+         document.forms[0].submit();           
+        else 
+        return false;
+    }
+</script>
+
 <html>
     <Body>
         <h3>Pesquisa</h3>
 
-        <Table>
-            <Th width="5%" style="text-align:lefth;">ID</Th>
-            <Th width="25%" style="text-align:lefth;">Nome</Th>
-            <Th width="25%" style="text-align:lefth;">Idade</Th>
+        <Table  style="width:100%;">
+            <Th width="25%" style="text-align:left;">ID</Th>
+            <Th width="25%" style="text-align:left;">Nome</Th>
+            <Th width="24%" style="text-align:left;">Idade</Th>
+            <Th width="26%" style="text-align:left;">Deletar</Th>
         </Table>
 
         <?
@@ -20,9 +30,12 @@
         {
             echo'<table>
             <br/>
-                <td width="9%" align="left"><a href="editar.php?id='.$rows_nomes ["id"] .' "title=Editar"> '  .$rows_nomes["id"] .' </a > </td>
-                <td width="15%" align="left"> ' .$rows_nomes["Nome"] .' </a > </td> 
-                <td width="5%" align="left"> ' .$rows_nomes["idade"] .'  </td> 
+                <td width="25%" align="left"><a href="editar.php?id='.$rows_nomes ["id"] .' "title=Editar"> '  .$rows_nomes["id"] .' </a > </td>
+                <td width="25%" align="left"> ' .$rows_nomes["Nome"] .' </a > </td> 
+                <td width="25%" align="left"> ' .$rows_nomes["idade"] .'  </td> 
+                <td width="5%" align="left"><a href="deletar.php?id='.$rows_nomes["id"] .'"title="Editar" 
+                onclick="return deletar_id();"
+                class="deletar">Deletar </td>
             </table>';} 
 
         ?>
